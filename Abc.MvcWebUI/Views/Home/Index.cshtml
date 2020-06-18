@@ -1,5 +1,5 @@
-﻿@using Abc.MvcWebUI.Entity;
-@model IEnumerable<Product>
+﻿@using Abc.MvcWebUI.Models;
+@model IEnumerable<ProductModel>
 
 @*Home controllerdan gönderdiğimiz ürün listesini buradan alıyoruz.*@
 
@@ -19,28 +19,11 @@
     </div>
 </div>
 
-<div class="row">
-
-    @foreach (var urun in Model)
-    {
-
-        <div class="col-md-4">
-            @*Her bir satıra 3 ürün gelmesi için*@
-            <div class="card">
-                <img class="card-img-top" src="holder.js/100px160/" alt="@urun.Name">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="/Home/Details/@urun.Id"> @urun.Name </a>
-                    </h4>
-                    <p class="card-text">@urun.Description</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">@urun.Price</small>
-                </div>
-            </div>
-        </div>
-
-    }
-
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
 </div>
+
+
+
+
 

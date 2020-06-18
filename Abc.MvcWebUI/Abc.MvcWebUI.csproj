@@ -102,21 +102,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="theme\css\all.css" />
-    <Content Include="theme\css\all.min.css" />
-    <Content Include="theme\css\brands.css" />
-    <Content Include="theme\css\brands.min.css" />
-    <Content Include="theme\css\fontawesome.css" />
-    <Content Include="theme\css\fontawesome.min.css" />
-    <Content Include="theme\css\regular.css" />
-    <Content Include="theme\css\regular.min.css" />
-    <Content Include="theme\css\solid.css" />
-    <Content Include="theme\css\solid.min.css" />
     <Content Include="theme\css\style.css" />
-    <Content Include="theme\css\svg-with-js.css" />
-    <Content Include="theme\css\svg-with-js.min.css" />
-    <Content Include="theme\css\v4-shims.css" />
-    <Content Include="theme\css\v4-shims.min.css" />
     <Content Include="theme\home.html" />
     <Content Include="theme\img\bg.jpg" />
     <Content Include="theme\img\camera.jpg" />
@@ -126,6 +112,11 @@
     <Content Include="theme\webfonts\fa-brands-400.svg" />
     <Content Include="theme\webfonts\fa-regular-400.svg" />
     <Content Include="theme\webfonts\fa-solid-900.svg" />
+    <Content Include="Upload\1.jpg" />
+    <Content Include="Upload\2.jpg" />
+    <Content Include="Upload\3.jpg" />
+    <Content Include="Upload\4.jpg" />
+    <Content Include="Upload\5.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +154,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
+    <Content Include="Views\Shared\_ProductList.cshtml" />
+    <Content Include="Views\Home\GetCategories.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -171,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
