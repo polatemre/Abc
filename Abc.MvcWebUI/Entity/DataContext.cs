@@ -8,9 +8,8 @@ namespace Abc.MvcWebUI.Entity
 {
     public class DataContext : DbContext
     {
-        public DataContext() : base("dataConntection")
+        public DataContext() : base("dataConnection")
         {
-            Database.SetInitializer(new DataInitializer()); // yaptığımız initializerı devreye girmesini sağlıyoruz.
         }
 
         public DbSet<Product> Products { get; set; }

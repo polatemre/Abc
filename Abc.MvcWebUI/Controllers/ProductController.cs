@@ -10,6 +10,7 @@ using Abc.MvcWebUI.Entity;
 
 namespace Abc.MvcWebUI.Controllers
 {
+    [Authorize(Roles = "admin")] //Giriş yapmış ve admin rolüne sahip ise controllera erişebilir.
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();

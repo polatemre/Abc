@@ -10,6 +10,8 @@ using Abc.MvcWebUI.Entity;
 
 namespace Abc.MvcWebUI.Controllers
 {
+    //[Authorize] //giriş yapan herkes bu controle erişebilir.
+    [Authorize(Roles = "admin")] //Giriş yapmış ve admin rolüne sahip ise controllera erişebilir.
     public class CategoryController : Controller
     {
         private DataContext db = new DataContext();
